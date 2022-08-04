@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import SetState from './component2/R025_SetState'
+import ForceUpdate from './component2/R026_ForceUpdate'
 
 function App() {
   return (
     <div>
       <h1>Start React</h1>
-      <SetState />
+      <ForceUpdate />
     </div>
   );
 }
