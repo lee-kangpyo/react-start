@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import Jquery from './component1/R016_Jquery'
+import Props from './component2/R017_Props'
 
 function App() {
   return (
     <div>
       <h1>Start React</h1>
-      <Jquery />
+      <Props props_val="프롭스 전달" />
     </div>
   );
 }
