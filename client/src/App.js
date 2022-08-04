@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import PropsObjVal from './component2/R020_PropsObjVal'
+import PropsRequired from './component2/R021_PropsRequired'
 
 function App() {
   return (
     <div>
       <h1>Start React</h1>
-      <PropsObjVal Object_Json={{react:"react", two:"2"}}/>
+      <PropsRequired Number="128"/>
     </div>
   );
 }
