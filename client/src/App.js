@@ -1,13 +1,12 @@
 import React from 'react';
 import './App.css';
-import PropsBoolean from './component2/R019_PropsBoolean'
+import PropsObjVal from './component2/R020_PropsObjVal'
 
 function App() {
   return (
     <div>
       <h1>Start React</h1>
-      <PropsBoolean Bool={false}/>
-      <PropsBoolean Bool/>
+      <PropsObjVal Object_Json={{react:"react", two:"2"}}/>
     </div>
   );
 }
