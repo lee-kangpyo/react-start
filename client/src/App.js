@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import ComponentClass from './component2/R027_ComponentClass'
+import PureComponentClass from './component2/R028_PureComponentClass'
 
 function App() {
   return (
     <div>
       <h1>Start React</h1>
-      <ComponentClass />
+      <PureComponentClass />
     </div>
   );
 }
