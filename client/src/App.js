@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import ShallowEqual from './component2/R029_ShallowEqual'
+import FunctionComponent from './component2/R030_FunctionComponent'
 
 function App() {
   return (
     <div>
       <h1>Start React</h1>
-      <ShallowEqual />
+      <FunctionComponent contents="[이것은 함수형 콤포넌트입니다.]" />
     </div>
   );
 }
