@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import ForceUpdate from './component2/R026_ForceUpdate'
+import ComponentClass from './component2/R027_ComponentClass'
 
 function App() {
   return (
     <div>
       <h1>Start React</h1>
-      <ForceUpdate />
+      <ComponentClass />
     </div>
   );
 }
