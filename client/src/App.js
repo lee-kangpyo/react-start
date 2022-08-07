@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.css';
-import ReturnMap from './component2/R033_ReturnMap'
+import ReactStrapAlerts from './component2/R034_ReactstrapAlerts'
+import 'bootstrap/dist/css/bootstrap.css'
 
 function App() {
   return (
     <div>
       <h1>Start React</h1>
-      <ReturnMap />
+      <ReactStrapAlerts />
     </div>
   );
 }
