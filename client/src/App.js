@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import ReactstrapButtonGroup from './component2/R038_ReactstrapButtonGroup'
+import ReactstrapBottoms from './component2/R039_ReactstrapBottoms'
 import 'bootstrap/dist/css/bootstrap.css'
 
 function App() {
   return (
     <div>
       <h1>Start React</h1>
-      <ReactstrapButtonGroup />
+      <ReactstrapBottoms />
     </div>
   );
 }
