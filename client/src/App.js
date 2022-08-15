@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import ReactstrapInputGroup from './component2/R045_ReactstrapInputGroup'
+import ReactJumbotron from './component2/R046_ReactJumbotron'
 import 'bootstrap/dist/css/bootstrap.css'
 
 function App() {
   return (
-    <div>
-      <h1>Start React</h1>
-      <ReactstrapInputGroup />
+    <div className='app'>
+      <h1 className='title'>Start React</h1>
+      <ReactJumbotron />
     </div>
   );
 }
