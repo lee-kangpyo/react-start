@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import ReactstrapPopover from './component2/R051_ReactstrapPopover'
+import ReactstrapProgress from './component2/R052_ReactstrapProgress'
 import 'bootstrap/dist/css/bootstrap.css'
 
 function App() {
   return (
     <div className='app'>
       <h1 className='title'>Start React</h1>
-      <ReactstrapPopover />
+      <ReactstrapProgress />
     </div>
   );
 }
