@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import ReactTap from './component2/R055_ReactTap'
+import Sweetalert2Basic from './component2/R056_Sweetalert2Basic'
 import 'bootstrap/dist/css/bootstrap.css'
 
 function App() {
   return (
     <div className='app'>
       <h1 className='title'>Start React</h1>
-      <ReactTap />
+      <Sweetalert2Basic />
     </div>
   );
 }
