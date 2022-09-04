@@ -3,11 +3,22 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { legacy_createStore as createStore } from "redux";
+import reducers from './reducers';
+
+const store = createStore(reducers);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <App />
-);
+
+const listener = () => {
+  root.render(
+    <App store={store} />
+  );
+}
+
+
+store.subscribe(listener);
+listener();
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
