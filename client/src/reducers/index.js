@@ -3,12 +3,14 @@ import { combineReducers } from 'redux'
 
 const initState = {
     str:'react',
+    test:"test",
 };
 
 const data = (state = initState, action) => {
     switch(action.type){
         case ADD:
-            return state, {
+            console.log(state);
+            return {...state, 
                 str:state.str + '213'
             };
         default:
