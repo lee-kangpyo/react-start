@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
-import CookieLoad from './component3/R086_cookieLoad'
+import React from 'react';
+import CookieRemove from './component3/R087_cookieRemove'
 
 function App(props) {
   return (
       <div>
-          <CookieLoad/>
+          <CookieRemove/>
       </div>
   );
 
