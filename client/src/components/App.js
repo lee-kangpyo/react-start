@@ -1,22 +1,22 @@
 import React from 'react';
 import { Route, Routes } from "react-router-dom";
-import ReactRouter from './R089_reactRouter'
-import ReactRouter2 from './R089_reactRouter2'
+
 
 // css
 import '../css/new.css';
-
+// header
 import HeaderAdmin from './Header/Header admin';
-
+// footer
 import Footer from './Footer/Footer';
+// login
+import LoginForm from './LoginForm'
 
 function App(props) {
   return (
       <div className='App'>
         <HeaderAdmin />
         <Routes>
-          <Route exact path="/" element={<ReactRouter/>} />
-          <Route exact path='/reactRouter2' element={<ReactRouter2/>} />
+          <Route exact path="/" element={<LoginForm/>} />
         </Routes>
         <Footer />
       </div>
