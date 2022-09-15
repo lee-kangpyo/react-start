@@ -11,12 +11,15 @@ import Footer from './Footer/Footer';
 // login
 import LoginForm from './LoginForm'
 
+import ReactDebounce from "./R094_reactDebounce";
+
 function App(props) {
   return (
       <div className='App'>
         <HeaderAdmin />
         <Routes>
           <Route exact path="/" element={<LoginForm/>} />
+          <Route exact path="/Debounce" element={<ReactDebounce/>} />
         </Routes>
         <Footer />
       </div>
