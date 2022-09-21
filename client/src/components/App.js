@@ -7,7 +7,7 @@ import '../css/new.css';
 // header
 import HeaderAdmin from './Header/Header admin';
 // footer
-import Footer from './Footer/Footer';
+import Footer from './Footer/Footer';ㅞ
 // login
 import LoginForm from './LoginForm'
 
