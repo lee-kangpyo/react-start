@@ -7,13 +7,14 @@ import '../css/new.css';
 // header
 import HeaderAdmin from './Header/Header admin';
 // footer
-import Footer from './Footer/Footer';ㅞ
+import Footer from './Footer/Footer';
 // login
 import LoginForm from './LoginForm'
 
 import ReactDebounce from "./R094_reactDebounce";
 import ReactThrottle from "./R095_reactThrottle";
 import FloatingPopulationList from './Floating_population/floatingPopulationList';
+import ReactProxy from './R109_reactProxy'
 
 function App(props) {
   return (
@@ -24,6 +25,7 @@ function App(props) {
           <Route exact path="/Debounce" element={<ReactDebounce/>} />
           <Route exact path="/Throttle" element={<ReactThrottle/>} />
           <Route exact path="/floatingPopulationList" element={<FloatingPopulationList/>} />
+          <Route exact path="/reactProxy" element={<ReactProxy/>} />
         </Routes>
         <Footer />
       </div>
