@@ -15,6 +15,7 @@ import ReactDebounce from "./R094_reactDebounce";
 import ReactThrottle from "./R095_reactThrottle";
 import FloatingPopulationList from './Floating_population/floatingPopulationList';
 import ReactProxy from './R109_reactProxy'
+import ApiGetJson from './R110ApiGetJson'
 
 function App(props) {
   return (
@@ -26,6 +27,7 @@ function App(props) {
           <Route exact path="/Throttle" element={<ReactThrottle/>} />
           <Route exact path="/floatingPopulationList" element={<FloatingPopulationList/>} />
           <Route exact path="/reactProxy" element={<ReactProxy/>} />
+          <Route exact path="/apiGetJson" element={<ApiGetJson/>} />
         </Routes>
         <Footer />
       </div>
