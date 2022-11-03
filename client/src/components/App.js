@@ -17,6 +17,8 @@ import FloatingPopulationList from './Floating_population/floatingPopulationList
 import ReactProxy from './R109_reactProxy'
 import ApiGetJson from './R110ApiGetJson'
 import ApiPostJson from './R111_ApiPostJson'
+import SoftWareView from './SoftwareToolsManage/SoftwareView'
+import SoftwareList from './SoftwareToolsManage/SoftwareList';
 
 function App(props) {
   return (
@@ -30,6 +32,8 @@ function App(props) {
           <Route exact path="/reactProxy" element={<ReactProxy/>} />
           <Route exact path="/apiGetJson" element={<ApiGetJson/>} />
           <Route exact path="/apiPostJson" element={<ApiPostJson/>} />
+          <Route exact path="/softWareView" element={<SoftWareView/>} />
+          <Route exact path="/softwareList" element={<SoftwareList/>} />
           
         </Routes>
         <Footer />

@@ -4,6 +4,7 @@ var router = express.Router();
 const bodyParser = require("body-parser")
 
 router.use(bodyParser.urlencoded({extented:true}));
+router.use(bodyParser.json());
 
 router.post("/", (req, res, next) => {
     var type = req.query.type;
@@ -20,6 +21,22 @@ router.post("/", (req, res, next) => {
 
             router.use('/', dbconnect_Module);
             next('route');
+        } catch(err){
+            console.log("Module > dbconnect error : " + err);
+        }
+    }else if (type == "save"){
+        //Swtool 관리자 저장
+        try{
+            // Mysql api 모듈
+            var dbconnect_Module = require('./dbconnect_Module');
+            // Mysql 쿼리 호출 정보 입력
+            req.body.mapper = 'SwToolsMapper';
+            req.body.crud = 'insert';
+            req.body.mapper_id = 'insertSwToolsInfo';
+
+            router.use('/', dbconnect_Module);
+            next('route');
+
         } catch(err){
             console.log("Module > dbconnect error : " + err);
         }
