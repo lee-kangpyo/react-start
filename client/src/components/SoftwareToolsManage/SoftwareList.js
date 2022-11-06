@@ -8,7 +8,7 @@ class SoftwareList extends Component {
 
         this.state = {
             responseSwtoolList: '',
-            append_SwtoolList: '',
+            append_SwtoolList: ()=>{},
         }
     }
 
@@ -17,12 +17,12 @@ class SoftwareList extends Component {
     }
 
     callSwToolListApi = async () => {
-        axios.post('/api/Swtool?type=list', {
+        await axios.post('/api/Swtool?type=list', {
         })
         .then( response => {
             try {
                 this.setState({ responseSwtoolList: response });
-                this.setState({ append_SwtoolList: this.SwToolListAppend() });
+                this.setState({ append_SwtoolList: this.SwToolListAppend });
             } catch (error) {
                 alert('작업중 오류가 발생하였습니다.');
             }
@@ -57,6 +57,8 @@ class SoftwareList extends Component {
             )
         }
         return result
+
+
     }
 
     render () {
@@ -80,7 +82,7 @@ class SoftwareList extends Component {
                             </tr>
                         </table>	
                         <table class="table_ty2 ad_tlist">
-                            {this.state.append_SwtoolList}
+                            {this.state.append_SwtoolList()}
                         </table>
                     </div>
                 </article>
